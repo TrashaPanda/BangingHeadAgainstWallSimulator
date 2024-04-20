@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm1x443l4sc08"]
+
+[ext_resource type="PackedScene" uid="uid://c4fk72dyv0rqp" path="res://Koto.tscn" id="1_duhn5"]
+[ext_resource type="Script" path="res://Scripts/Main.cs" id="1_gtxxf"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_gtxxf")
+
+[node name="ChromaKey" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 1, 0, 1)
+
+[node name="Koto" parent="." instance=ExtResource("1_duhn5")]
+position = Vector2(419, 1035)
+
+[node name="EventSubHandler" type="Node" parent="."]
+
+[node name="WebsocketThing" type="Node" parent="."]

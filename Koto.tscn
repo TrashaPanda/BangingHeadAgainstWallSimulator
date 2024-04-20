@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4fk72dyv0rqp"]
+
+[ext_resource type="Texture2D" uid="uid://bi3ojuypq6vsi" path="res://Koto.png" id="1_kvqih"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yl1rb"]
+
+[node name="KotoNode" type="CharacterBody2D"]
+scale = Vector2(0.25, 0.25)
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_kvqih")
+
+[node name="Collider" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_yl1rb")
